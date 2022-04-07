@@ -1,17 +1,32 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="dark">
     <ion-title>
-      Tab 1
+      Soft Skills
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Início</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <img src="https://www.hipolabor.com.br/blog/wp-content/uploads/2018/04/40913-saiba-como-o-gerenciamento-de-tarefas-pode-aumentar-suas-vendas.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>O que são</ion-card-subtitle>
+      <ion-card-title>Soft Skills?</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card-content>
+      Softy Skills são, resumidamente, habilidades comportamentais relacionadas a maneira como o profissional lida com o outro e consigo mesmo em diferentes situações.
+
+      <p>São usadas por profissionais de Recursos Humanos para identificar características específicas de um profissional.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      Nesse aplicativo, te guiaremos através dos entendimentos das soft skills, lhe fornecendo conhecimento e explicação sobre elas.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" routerLink="/tab2">Clique aqui para começar.</ion-button>
+
 </ion-content>
