@@ -1,11 +1,51 @@
 <ion-header>
   <ion-toolbar class="ion-text-center" color="dark">
     <ion-title>
-      Tab 2
+      Pensamento Criativo
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-card>
+    <img src="https://blog.simbiox.com.br/wp-content/uploads/2020/11/criatividade_e_inovacao_thumbnail-1280x720.jpg" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Criatividade</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Ter criatividade ajuda muito na hora de resolver problemas, pois conseguimos enxergar diferentes saídas através dela. Quando uma pessoa consegue ter essa visão criativa, é mais fácil desenvolver soluções para qualquer problema que aparecer. Isso garante rapidez nos processos internos.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
+  <br>
+  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <div>
+            <ion-item>
+            <ion-avatar slot="start">
+            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+              </ion-avatar>
+              <ion-label>Suzi, a Guia</ion-label>
+            </ion-item>
+
+            <ion-card-content>
+              Para que se tenha essa capacidade criativa, diferentes fontes de conhecimento podem ser usadas. Capacidades técnicas, experiências passadas e capacidade de abstração podem se tornar combustíveis para uma saída inteligente de crises.
+            </ion-card-content>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 
 </ion-content>
