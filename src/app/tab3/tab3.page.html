@@ -7,5 +7,45 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-card>
+    <img src="https://cakeerp.com/wp-content/uploads/2020/01/capa-1080x675.jpg" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Comunicação Eficiente</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 
+  <ion-card>
+    <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Saber comunicar faz muita diferença no ambiente corporativo. A cada interação, é necessário saber como colocar suas dúvidas e pensamentos diante do seu interlocutor, de forma que ele entenda o que você quer dizer.
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
+  <br>
+  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <div>
+            <ion-item>
+            <ion-avatar slot="start">
+            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+              </ion-avatar>
+              <ion-label>Suzi, a Guia</ion-label>
+            </ion-item>
+
+            <ion-card-content>
+             Mantenha em mente que: uma boa comunicação garante que ambas as partes se entendam e que aquilo que é esperado seja realizado da maneira como foi pensado. Por isso, as empresas têm buscado bons comunicadores na hora de atrair e manter novos talentos.
+            </ion-card-content>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 </ion-content>

@@ -5,5 +5,45 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <img src="https://proj4.me/wp-content/uploads/2021/08/Gerenciamento-de-Tempo.png" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Gerenciamento do Tempo</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 
+  <ion-card>
+    <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Não só na vida profissional, mas também nos compromissos pessoais, a gestão do tempo se torna uma soft skill procurada por todos. Quando o tempo é bem trabalhado, é possível fazer mais e gerar mais valor com a mesma quantidade de tempo.
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
+  <br>
+  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <div>
+            <ion-item>
+            <ion-avatar slot="start">
+            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+              </ion-avatar>
+              <ion-label>Suzi, a Guia</ion-label>
+            </ion-item>
+
+            <ion-card-content>
+              Se a pessoa tem um cargo de gerência, é mais fácil definir o tempo em que cada projeto deve ser desenvolvido. Se tem um cargo menor, saberá como gerenciar suas obrigações. Resumidamente, desenvolver essa soft skill auxiliará em todos os níveis de atuação em sua área desejada.
+            </ion-card-content>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 </ion-content>
