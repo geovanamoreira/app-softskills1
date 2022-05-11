@@ -5,5 +5,47 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <img src="https://www.starsoft.com.br/wp-content/uploads/2019/02/plano-de-capacidade-1024x576.jpg" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Capacidade de Planejamento</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 
+  <ion-card>
+    <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Planejar da maneira correta é o que fará com que os prazos sejam respeitados, o retrabalho seja evitado e o tempo seja ganho.
+
+      <p>Mesmo que aconteçam imprevistos, o projeto será concluído, já que o planejador coloca isso em conta na hora de pensar em cada prazo.</p>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
+  <br>
+  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <div>
+            <ion-item>
+            <ion-avatar slot="start">
+            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+              </ion-avatar>
+              <ion-label>Suzi, a Guia</ion-label>
+            </ion-item>
+
+            <ion-card-content>
+              Se o profissional consegue ser um bom planejador, isso com certeza trará frutos para ele!
+            </ion-card-content>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 </ion-content>

@@ -5,5 +5,45 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <img src="https://img.freepik.com/vetores-gratis/empresario-com-muitos-bracos-multitarefa-fazendo-varias-tarefas-de-escritorio-em-posicao-de-lotus_165488-1047.jpg?w=2000" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Habilidade para ser multitasking</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 
+  <ion-card>
+    <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Sabe o seu smartphone, que consegue rodar vários aplicativos ao mesmo tempo, sem que isso afete a experiência de uso? É assim que o empregado multitasking funciona. Ele consegue se envolver em diferentes projetos e cuidar de todas as suas obrigações sem que isso impacte na qualidade delas.
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
+  <br>
+  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <div>
+            <ion-item>
+            <ion-avatar slot="start">
+            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+              </ion-avatar>
+              <ion-label>Suzi, a Guia</ion-label>
+            </ion-item>
+
+            <ion-card-content>
+              O único receio que deve haver com essa habilidade é de que a pessoa não acumule mais obrigações do que pode cumprir!!!
+            </ion-card-content>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 </ion-content>
