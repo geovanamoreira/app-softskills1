@@ -14,7 +14,7 @@
 
   <ion-card>
     <ion-item>
-  <ion-avatar slot="start">
+    <ion-avatar slot="start">
     <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
       </ion-avatar>
       <ion-label>Suzi, a Guia</ion-label>
@@ -28,24 +28,97 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
-  <br>
-  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
-    <ng-template>
-      <ion-content>
-        <div>
-            <ion-item>
-            <ion-avatar slot="start">
-            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
-              </ion-avatar>
-              <ion-label>Suzi, a Guia</ion-label>
-            </ion-item>
+  <ion-card>
+    <ion-item>
+    <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
 
-            <ion-card-content>
-              Se o profissional consegue ser um bom planejador, isso com certeza trará frutos para ele!
-            </ion-card-content>
-        </div>
-      </ion-content>
-    </ng-template>
-  </ion-popover>
+    <ion-card-content>
+      Gerencie seu planejamento aqui!
+    </ion-card-content>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Hoje você pretende fazer o que?</ion-label>
+        <ion-select value="teórico">
+          <ion-select-option value="teórico">Teórica</ion-select-option>
+          <ion-select-option value="prático">Prática</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Pretende</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="nes">Terminar relatórios</ion-select-option>
+          <ion-select-option value="n64">Auxiliar a equipe</ion-select-option>
+          <ion-select-option value="ps">Gerenciar dados</ion-select-option>
+          <ion-select-option value="genesis">Desenvolver projeto técnico</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Horário</ion-label>
+        <ion-select value="notifications" interface="action-sheet">
+          <ion-select-option value="enable">06:00-15:00</ion-select-option>
+          <ion-select-option value="mute">07:00-16:00</ion-select-option>
+          <ion-select-option value="mute_week">08:00-17:00</ion-select-option>
+          <ion-select-option value="mute_year">09:00-18:00</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Como está o andamento do projeto?</ion-label>
+        <ion-select ok-text="Okay" cancel-text="Cancel">
+          <ion-select-option value="dos">No início</ion-select-option>
+          <ion-select-option value="lunix">Na metade com um bom andamento</ion-select-option>
+          <ion-select-option value="mac7">Na metade com um andamento mediano</ion-select-option>
+          <ion-select-option value="mac8">Na metade com um andamento ruim</ion-select-option>
+          <ion-select-option value="win3.1">Finalizando</ion-select-option>
+          <ion-select-option value="win95">Terminado</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Prazo</ion-label>
+        <ion-select value="03">
+          <ion-select-option value="01">Falta 1 mês</ion-select-option>
+          <ion-select-option value="02">Faltam 15 dias</ion-select-option>
+          <ion-select-option value="03">Falta 1 semana</ion-select-option>
+          <ion-select-option value="04">Falta 3 dias</ion-select-option>
+          <ion-select-option value="05">Amanhã</ion-select-option>
+          <ion-select-option value="06">Hoje</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Month</ion-label>
+        <ion-select value="12">
+          <ion-select-option value="01">January</ion-select-option>
+          <ion-select-option value="02">February</ion-select-option>
+          <ion-select-option value="03">March</ion-select-option>
+          <ion-select-option value="04">April</ion-select-option>
+          <ion-select-option value="05">May</ion-select-option>
+          <ion-select-option value="06">June</ion-select-option>
+          <ion-select-option value="07">July</ion-select-option>
+          <ion-select-option value="08">August</ion-select-option>
+          <ion-select-option value="09">September</ion-select-option>
+          <ion-select-option value="10">October</ion-select-option>
+          <ion-select-option value="11">November</ion-select-option>
+          <ion-select-option value="12">December</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Falta muito para finalizar?</ion-label>
+        <ion-select value="teórico">
+          <ion-select-option value="teórico">Sim</ion-select-option>
+          <ion-select-option value="prático">Não</ion-select-option>
+          <ion-select-option value="b">Finalizado</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-card>
 </ion-content>

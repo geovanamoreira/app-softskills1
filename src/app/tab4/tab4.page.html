@@ -14,7 +14,7 @@
 
   <ion-card>
     <ion-item>
-  <ion-avatar slot="start">
+    <ion-avatar slot="start">
     <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
       </ion-avatar>
       <ion-label>Suzi, a Guia</ion-label>
@@ -25,25 +25,26 @@
 
     </ion-card-content>
   </ion-card>
-
-  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
   <br>
-  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
-    <ng-template>
-      <ion-content>
-        <div>
-            <ion-item>
-            <ion-avatar slot="start">
-            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
-              </ion-avatar>
-              <ion-label>Suzi, a Guia</ion-label>
-            </ion-item>
 
-            <ion-card-content>
-              Se a pessoa tem um cargo de gerência, é mais fácil definir o tempo em que cada projeto deve ser desenvolvido. Se tem um cargo menor, saberá como gerenciar suas obrigações. Resumidamente, desenvolver essa soft skill auxiliará em todos os níveis de atuação em sua área desejada.
-            </ion-card-content>
-        </div>
-      </ion-content>
-    </ng-template>
-  </ion-popover>
+  <ion-card>
+    <ion-item>
+    <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Como está seu gerenciamento hoje?
+      <br>
+
+      <ion-item>
+        <ion-range value="20">
+          <ion-icon slot="start" size="small" name="thumbs-down-outline"></ion-icon>
+          <ion-icon slot="end" name="thumbs-up-outline"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -26,24 +26,32 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
-  <br>
-  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
-    <ng-template>
-      <ion-content>
-        <div>
-            <ion-item>
-            <ion-avatar slot="start">
-            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
-              </ion-avatar>
-              <ion-label>Suzi, a Guia</ion-label>
-            </ion-item>
+  <ion-card>
+    <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
 
-            <ion-card-content>
-              O único receio que deve haver com essa habilidade é de que a pessoa não acumule mais obrigações do que pode cumprir!!!
-            </ion-card-content>
-        </div>
-      </ion-content>
-    </ng-template>
-  </ion-popover>
+    <ion-card-content>
+      Se oriente nas suas tarefas!
+
+      <ion-list>
+        <ion-item>
+          <ion-label>Exemplo 1</ion-label>
+          <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+          <ion-label>Exemplo 2</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox color="tertiary" checked slot="start"></ion-checkbox>
+          <ion-label>Exemplo 3</ion-label>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
 </ion-content>

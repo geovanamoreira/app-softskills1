@@ -28,24 +28,72 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-button class="botao" id="nested-button" color="warning">Dica da Suzi</ion-button>
-  <br>
-  <ion-popover class="quadrinho" trigger="nested-button" [dismissOnSelect]="true">
-    <ng-template>
-      <ion-content>
-        <div>
-            <ion-item>
-            <ion-avatar slot="start">
-            <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
-              </ion-avatar>
-              <ion-label>Suzi, a Guia</ion-label>
-            </ion-item>
 
-            <ion-card-content>
-             Mantenha em mente que: uma boa comunicação garante que ambas as partes se entendam e que aquilo que é esperado seja realizado da maneira como foi pensado. Por isso, as empresas têm buscado bons comunicadores na hora de atrair e manter novos talentos.
-            </ion-card-content>
-        </div>
-      </ion-content>
-    </ng-template>
-  </ion-popover>
+  <ion-card>
+    <ion-item>
+    <ion-avatar slot="start">
+    <img src="https://cdn-icons-png.flaticon.com/512/4647/4647238.png">
+      </ion-avatar>
+      <ion-label>Suzi, a Guia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+
+      Ative sua comunicação!!!
+      <br>
+      <ion-list>
+      <ion-item>
+        <ion-label>Contato visual!!!</ion-label>
+        <ion-toggle slot="start" name="blueberry"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Gestos</ion-label>
+        <ion-toggle slot="start" name="apple" color="secondary"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Direto ao ponto</ion-label>
+        <ion-toggle slot="start" name="grape" color="tertiary"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Ouça antes de falar</ion-label>
+        <ion-toggle slot="start" name="kiwi" color="success"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Faça mais perguntas!</ion-label>
+        <ion-toggle slot="start" name="banana" color="warning"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Leia</ion-label>
+        <ion-toggle slot="start" name="cherry" color="danger"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Escolha o meio certo</ion-label>
+        <ion-toggle slot="start" name="banana" color="light"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não interrompa</ion-label>
+        <ion-toggle slot="start" name="cantaloupe" color="medium"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Pratique na frente do espelho</ion-label>
+        <ion-toggle slot="start" name="blackberry" color="dark"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Crie vínculos!</ion-label>
+        <ion-toggle slot="start" name="blueberry"></ion-toggle>
+      </ion-item>
+    </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
